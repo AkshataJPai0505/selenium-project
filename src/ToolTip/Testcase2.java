@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Testcase2 {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium jar\\webdriver 86\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium jar\\webdriver 92\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");

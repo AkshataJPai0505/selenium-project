@@ -38,6 +38,12 @@ public class browserclass {
 	driver.findElement(By.id(id)).click();
 	}
 	
+	//to click on element based on id and send data
+		void clickonelementbyidandsenddata(String id,String text)
+		{
+		driver.findElement(By.id(id)).sendKeys(text);
+		}	
+	
 	//to click on OK in Alert
 	void clickonokinalert()
 	{
@@ -189,7 +195,22 @@ public class browserclass {
 						WebElement a=driver.findElement(By.xpath(dropdown));
 						Select s= new Select(a);
 						s.deselectByValue(text);
-					}					
+					}	
+//to switch to frame using index
+					void switchtoframeusingindex(int index)
+					{
+						driver.switchTo().frame(index);
+					}
+//to switch to frame using id or name
+					void switchtoframeusingidorname(String text)
+					{
+						driver.switchTo().frame(text);
+					}	
+//to switch to parent frame	
+					void switchtoparentframe()
+					{
+						driver.switchTo().parentFrame();
+					}	
 				
 				
 				
